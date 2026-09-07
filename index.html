@@ -1,490 +1,657 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="مكتب المحاسب القانوني أنور زكي للمحاسبة والاستشارات المالية. خدمات المحاسبة والإقرارات الضريبية والاستشارات المالية للأفراد والشركات.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta name="description" content="مكتب المحاسب القانوني أنور زكي للمحاسبة والاستشارات المالية. خدمات المحاسبة والإقرارات الضريبية والاستشارات المالية للأفراد والشركات.">  <title>أنور زكي | للمحاسبة والاستشارات المالية</title>  <link rel="canonical" href="https://adhamanwer5-pixelad.github.io/anwar-zaki.1951/">  <link rel="stylesheet" href="style.css">
   <meta name="keywords" content="أنور زكي, مكتب أنور زكي, محاسبة, استشارات مالية, إقرارات ضريبية, محاسب">
-  <title>أنور زكي | للمحاسبة والاستشارات المالية</title>
-  <link rel="canonical" href="https://adhamanwer5-pixelad.github.io/anwar-zaki.1951/">
-  <link rel="stylesheet" href="style.css">
 
-  <style>
-    .jobs { background:#f7f7f5; }
-    .jobs-box {
-      display:grid;
-      grid-template-columns:.85fr 1.15fr;
-      gap:40px;
-      align-items:start;
-      background:#fff;
-      border-radius:20px;
-      padding:35px;
-      box-shadow:0 10px 35px rgba(0,0,0,.06);
-    }
-    .jobs-info h3 { margin-bottom:15px; }
-    .jobs-info p { line-height:1.9; }
-    .jobs-info ul { margin:20px 0 0; padding-right:20px; line-height:2; }
-    #jobForm { display:grid; gap:14px; }
-    #jobForm input,#jobForm select,#jobForm textarea {
-      width:100%;
-      box-sizing:border-box;
-      padding:13px 15px;
-      border:1px solid #ddd;
-      border-radius:10px;
-      font-family:inherit;
-      font-size:15px;
-      background:#fff;
-    }
-    #jobForm textarea { resize:vertical; }
-    .file-label { font-weight:600; margin-top:5px; }
-    #jobForm input[type="file"] { padding:10px; }
-    .form-note { display:block; line-height:1.7; opacity:.75; margin-top:-4px; }
-    @media (max-width:800px) {
-      .jobs-box { grid-template-columns:1fr; padding:22px; }
-    }
-  </style>
-</head>
+<style>
+.jobs {
+  background: #f7f7f5;
+}
 
-<body>
+.jobs-box {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 40px;
+  align-items: start;
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.06);
+}
 
-<header class="navbar">
-  <div class="container nav-inner">
-    <a class="brand" href="#home">
-      <img src="logo.jpeg" alt="شعار أنور زكي">
+.jobs-info h3 {
+  margin-bottom: 15px;
+}
+
+.jobs-info p {
+  line-height: 1.9;
+}
+
+.jobs-info ul {
+  margin: 20px 0 0;
+  padding-right: 20px;
+  line-height: 2;
+}
+
+#jobForm {
+  display: grid;
+  gap: 14px;
+}
+
+#jobForm input,
+#jobForm select,
+#jobForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  background: #fff;
+}
+
+#jobForm textarea {
+  resize: vertical;
+}
+
+.file-label {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+#jobForm input[type="file"] {
+  padding: 10px;
+}
+
+.form-note {
+  display: block;
+  line-height: 1.7;
+  opacity: .75;
+  margin-top: -4px;
+}
+
+@media (max-width: 800px) {
+  .jobs-box {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+}
+</style>
+
+
+<style>
+/* ===== الإضافات الجديدة: الأخبار + الجهات الرقمية + الخريطة + اللغات ===== */
+.language-switcher{display:flex;align-items:center;gap:6px;margin-inline-start:10px}
+.lang-btn{border:1px solid rgba(0,0,0,.12);background:#fff;color:#222;border-radius:999px;padding:7px 12px;cursor:pointer;font:inherit;font-size:13px;transition:.2s}
+.lang-btn.active,.lang-btn:hover{background:#111;color:#fff}
+.news-section{background:#f8f6f1}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}
+.news-card{background:#fff;border:1px solid #e8e2d8;border-radius:18px;padding:25px;box-shadow:0 8px 28px rgba(0,0,0,.05);display:flex;flex-direction:column}
+.news-badge{display:inline-flex;align-self:flex-start;background:#f0eadf;border-radius:999px;padding:6px 11px;font-size:12px;margin-bottom:15px}
+.news-card h3{line-height:1.7;margin:0 0 12px}
+.news-card p{line-height:1.8;color:#666;margin:0 0 18px}
+.news-card a{margin-top:auto;text-decoration:none;font-weight:700}
+.digital-box{margin-top:30px;background:#171717;color:#fff;border-radius:22px;padding:30px;display:grid;grid-template-columns:1.2fr .8fr;gap:25px;align-items:center}
+.digital-links{display:flex;flex-wrap:wrap;gap:10px}
+.digital-links a{display:inline-flex;padding:11px 16px;border-radius:10px;background:#fff;color:#111;text-decoration:none;font-weight:700}
+.location-section{background:#fff}
+.location-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:stretch;margin-top:35px}
+.location-card{padding:30px;border-radius:20px;background:#f7f4ee}
+.location-card h3{margin-top:0}
+.location-list{list-style:none;padding:0;line-height:2.1}
+.location-map{min-height:390px;border-radius:20px;overflow:hidden;box-shadow:0 10px 35px rgba(0,0,0,.08);border:1px solid #eee}
+.location-map iframe{width:100%;height:100%;min-height:390px;border:0}
+.map-note{font-size:13px;opacity:.7;line-height:1.7}
+@media(max-width:900px){
+ .news-grid,.location-grid,.digital-box{grid-template-columns:1fr}
+ .language-switcher{margin:10px 0}
+ .news-card{padding:21px}
+}
+body.en{direction:ltr;text-align:left}
+body.en .nav-inner,body.en .hero-grid,body.en .about-grid,body.en .jobs-box,body.en .contact-box{direction:ltr}
+body.en #navMenu{direction:ltr}
+body.en .section-head,.body.en .hero-content{direction:ltr}
+</style>
+
+
+<style>
+.tax-news{background:#f8f6f0}.tax-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.tax-card{background:#fff;border:1px solid #e7e1d5;border-radius:18px;padding:24px;box-shadow:0 8px 25px rgba(0,0,0,.05);display:flex;flex-direction:column}.tax-date{font-size:13px;opacity:.65;margin-bottom:10px}.tax-tag{display:inline-block;font-size:12px;margin-bottom:12px;font-weight:700}.tax-card h3{line-height:1.7;margin:0 0 12px}.tax-card p{line-height:1.8;flex:1}.official-link{margin-top:15px;text-decoration:none;font-weight:700}.digital-box{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;background:#fff;border-radius:22px;padding:32px;box-shadow:0 10px 35px rgba(0,0,0,.06)}.digital-box p{line-height:1.9}.location-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.location-card{background:#fff;border-radius:18px;padding:24px;box-shadow:0 8px 25px rgba(0,0,0,.06)}.location-card p{line-height:1.8}.map-link{display:inline-block;margin-top:10px;font-weight:700}.update-badge{display:inline-block;background:#eee7d8;border-radius:30px;padding:7px 13px;font-size:12px;margin-bottom:12px}@media(max-width:800px){.tax-grid,.digital-box,.location-grid{grid-template-columns:1fr}}</style>
+</head><body><!-- =========================
+     Navbar
+========================= --><header class="navbar">
+  <div class="container nav-inner"><a class="brand" href="#home">
+  <img src="logo.jpeg" alt="شعار أنور زكي">
+</a>
+
+<nav id="navMenu">
+  <a class="active" href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+  <a href="#about" data-ar="من نحن" data-en="About Us">من نحن</a>
+  <a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+  <a href="#founder" data-ar="المؤسس" data-en="Founder">المؤسس</a>
+  <a href="#team" data-ar="فريق العمل" data-en="Our Team">فريق العمل</a>
+  <a href="#blog" data-ar="المدونة" data-en="Blog">المدونة</a>
+    <a href="#news">الأخبار</a>
+    <a href="#location">الموقع</a>
+  <a href="#jobs" data-ar="الوظائف" data-en="Careers">الوظائف</a>
+    <a href="#contact" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+</nav>
+
+<div class="language-switcher" aria-label="Language selector">
+  <button type="button" class="lang-btn active" data-lang="ar">العربية</button>
+  <button type="button" class="lang-btn" data-lang="en">EN</button>
+</div>
+
+<a class="nav-btn" href="#contact">
+  اتصل بنا <span>◀️</span>
+</a>
+
+<button
+  class="menu-btn"
+  id="menuBtn"
+  type="button"
+  aria-label="فتح القائمة"
+  aria-expanded="false">
+  ☰
+</button>
+
+  </div>
+</header><main><!-- =========================
+     Hero
+========================= --><section id="home" class="hero">  <div class="container hero-grid"><div class="hero-content">
+
+  <div class="eyebrow">
+    <i></i>
+    خبرة تمتد منذ 1951
+    <i></i>
+  </div>
+
+  <h1>
+    حلول مالية ذكية
+    <br>
+    <span>لمستقبل أكثر نجاحاً</span>
+  </h1>
+
+  <p>
+    نقدم خدمات محاسبية واستشارية متكاملة تساعد عملاءنا
+    على اتخاذ قرارات مالية سليمة وتحقيق النمو المستدام.
+  </p>
+
+  <div class="hero-actions">
+    <a class="btn primary" href="#services">
+      استكشف خدماتنا
     </a>
 
-    <nav id="navMenu">
-      <a class="active" href="#home">الرئيسية</a>
-      <a href="#about">من نحن</a>
-      <a href="#services">خدماتنا</a>
-      <a href="#founder">المؤسس</a>
-      <a href="#team">فريق العمل</a>
-      <a href="#blog">المدونة</a>
-      <a href="#jobs">الوظائف</a>
-      <a href="#contact">تواصل معنا</a>
-    </nav>
-
-    <a class="nav-btn" href="#contact">اتصل بنا <span>📞</span></a>
-
-    <button class="menu-btn" id="menuBtn" type="button" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+    <a class="btn ghost" href="#about">
+      شاهد المزيد <b>▶️</b>
+    </a>
   </div>
-</header>
 
-<main>
+</div>
 
-<section id="home" class="hero">
-  <div class="container hero-grid">
-    <div class="hero-content">
-      <div class="eyebrow"><i></i>خبرة تمتد منذ 1951<i></i></div>
 
-      <h1>حلول مالية ذكية<br><span>لمستقبل أكثر نجاحاً</span></h1>
+<div class="hero-visual">
 
-      <p>نقدم خدمات محاسبية واستشارية متكاملة تساعد عملاءنا على اتخاذ قرارات مالية سليمة وتحقيق النمو المستدام.</p>
-
-      <div class="hero-actions">
-        <a class="btn primary" href="#services">استكشف خدماتنا</a>
-        <a class="btn ghost" href="#about">شاهد المزيد <b>🔎</b></a>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="office-card">
-        <img src="logo.jpeg" alt="أنور زكي للمحاسبة والاستشارات المالية" class="hero-logo">
-      </div>
-    </div>
+  <div class="office-card">
+    <img
+      src="logo.jpeg"
+      alt="أنور زكي للمحاسبة والاستشارات المالية"
+      class="hero-logo">
   </div>
-</section>
 
-<section class="stats">
-  <div class="container stats-grid">
-    <div><strong>1951</strong><span>تأسسنا منذ</span></div>
-    <div><strong>4000+</strong><span>مشروع مكتمل</span></div>
-    <div><strong>70+</strong><span>سنوات من الخبرة</span></div>
-    <div><strong>5000+</strong><span>عميل وثق بنا</span></div>
-  </div>
-</section>
+</div>
 
-<section id="services" class="section services">
+  </div></section><!-- =========================
+     Statistics
+========================= --><section class="stats">  <div class="container stats-grid"><div>
+  <strong>1951</strong>
+  <span>تأسسنا منذ</span>
+</div>
+
+<div>
+  <strong>2000+</strong>
+  <span>مشروع مكتمل</span>
+</div>
+
+<div>
+  <strong>70+</strong>
+  <span>سنوات من الخبرة</span>
+</div>
+
+<div>
+  <strong>1000+</strong>
+  <span>عميل وثق بنا</span>
+</div>
+
+  </div></section><!-- =========================
+     Services
+========================= --><section id="services" class="section services">
   <div class="container">
     <div class="section-head">
       <span>خدماتنا</span>
       <h2>كافة خدمات المحاسب القانوني</h2>
-      <p>نقدم مجموعة متكاملة من خدمات المحاسبة والمراجعة والضرائب والاستشارات المالية للشركات والمنشآت والأفراد، وفقًا للقوانين والمعايير المهنية المعمول بها.</p>
+      <p>
+        نقدم مجموعة متكاملة من خدمات المحاسبة والمراجعة والضرائب والاستشارات
+        المالية للشركات والمنشآت والأفراد، وفقًا للقوانين والمعايير المهنية المعمول بها.
+      </p>
     </div>
 
     <div class="cards">
-      <article class="card"><div class="icon">▣</div><h3>خدمات المحاسبة</h3><p>إمساك الدفاتر والحسابات، إعداد القيود والتسويات، الحسابات الختامية والقوائم والتقارير المالية.</p><a href="#contact">المزيد ←</a></article>
-      <article class="card"><div class="icon">✓</div><h3>المراجعة والتدقيق</h3><p>مراجعة وتدقيق الحسابات والقوائم المالية وفحص المستندات والعمليات وتقييم نظم الرقابة الداخلية.</p><a href="#contact">المزيد ←</a></article>
-      <article class="card"><div class="icon">▤</div><h3>الخدمات الضريبية</h3><p>إعداد ومراجعة الإقرارات الضريبية، والاستشارات الضريبية، ومراجعة الموقف الضريبي والمساندة في الفحص.</p><a href="#contact">المزيد ←</a></article>
-      <article class="card"><div class="icon">◇</div><h3>تأسيس الشركات</h3><p>المساعدة في الإجراءات المحاسبية المتعلقة بتأسيس الشركات وإعداد النظام المحاسبي وتنظيم الدورة المستندية.</p><a href="#contact">المزيد ←</a></article>
-      <article class="card"><div class="icon">📈</div><h3>الاستشارات المالية والمحاسبية</h3><p>استشارات مالية ومحاسبية، إعداد الموازنات والتوقعات، تحليل الأداء والتكاليف والربحية.</p><a href="#contact">المزيد ←</a></article>
-      <article class="card"><div class="icon">◫</div><h3>دراسات الجدوى والتحليل المالي</h3><p>إعداد دراسات الجدوى الاقتصادية وتحليل التدفقات النقدية وتقييم المشروعات والاستثمارات والمخاطر.</p><a href="#contact">المزيد ←</a></article>
-      <article class="card"><div class="icon">◉</div><h3>خدمات الشركات والمنشآت</h3><p>تنظيم الحسابات والدورة المستندية وإعداد التقارير المالية ودعم الإدارة في القرارات المالية.</p><a href="#contact">المزيد ←</a></article>
-      <article class="card"><div class="icon">↔</div><h3>الفحص والتسويات المالية</h3><p>فحص الحسابات والمستندات وتسويات الحسابات ومطابقة الأرصدة وإعداد التقارير اللازمة.</p><a href="#contact">المزيد ←</a></article>
+
+      <article class="card">
+        <div class="icon">▣</div>
+        <h3>خدمات المحاسبة</h3>
+        <p>إمساك الدفاتر والحسابات، إعداد القيود والتسويات، الحسابات الختامية والقوائم والتقارير المالية.</p>
+        <a href="#contact">المزيد ←</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">✓</div>
+        <h3>المراجعة والتدقيق</h3>
+        <p>مراجعة وتدقيق الحسابات والقوائم المالية وفحص المستندات والعمليات وتقييم نظم الرقابة الداخلية.</p>
+        <a href="#contact">المزيد ←</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">▤</div>
+        <h3>الخدمات الضريبية</h3>
+        <p>إعداد ومراجعة الإقرارات الضريبية، والاستشارات الضريبية، ومراجعة الموقف الضريبي والمساندة في الفحص.</p>
+        <a href="#contact">المزيد ←</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">◇</div>
+        <h3>تأسيس الشركات</h3>
+        <p>المساعدة في الإجراءات المحاسبية المتعلقة بتأسيس الشركات وإعداد النظام المحاسبي وتنظيم الدورة المستندية.</p>
+        <a href="#contact">المزيد ←</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">↗️</div>
+        <h3>الاستشارات المالية والمحاسبية</h3>
+        <p>استشارات مالية ومحاسبية، إعداد الموازنات والتوقعات، تحليل الأداء والتكاليف والربحية.</p>
+        <a href="#contact">المزيد ←</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">◫</div>
+        <h3>دراسات الجدوى والتحليل المالي</h3>
+        <p>إعداد دراسات الجدوى الاقتصادية وتحليل التدفقات النقدية وتقييم المشروعات والاستثمارات والمخاطر.</p>
+        <a href="#contact">المزيد ←</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">◉</div>
+        <h3>خدمات الشركات والمنشآت</h3>
+        <p>تنظيم الحسابات والدورة المستندية وإعداد التقارير المالية ودعم الإدارة في القرارات المالية.</p>
+        <a href="#contact">المزيد ←</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">↔</div>
+        <h3>الفحص والتسويات المالية</h3>
+        <p>فحص الحسابات والمستندات وتسويات الحسابات ومطابقة الأرصدة وإعداد التقارير اللازمة.</p>
+        <a href="#contact">المزيد ←</a>
+      </article>
+
     </div>
   </div>
-</section>
+</section><!-- =========================
+     About
+========================= --><section id="about" class="about section">  <div class="container about-grid"><div class="about-image">
 
-<section id="about" class="about section">
-  <div class="container about-grid">
-    <div class="about-image">
-      <div class="building">
-        <img src="logo.jpeg" alt="مكتب أنور زكي للمحاسبة والاستشارات المالية">
-      </div>
-    </div>
+  <div class="building">
 
-    <div class="about-content">
-      <div class="eyebrow dark">من نحن</div>
-      <h2>شريكك المالي<br><span>نحو النجاح والاستدامة</span></h2>
-      <p>منذ عام 1951، نلتزم بتقديم خدمات احترافية بمعايير عالمية. نعمل بشفافية ومصداقية لبناء علاقات طويلة الأمد مع عملائنا.</p>
-      <a class="btn primary" href="#contact">تعرف علينا أكثر</a>
-    </div>
+    <img
+      src="logo.jpeg"
+      alt="مكتب أنور زكي للمحاسبة والاستشارات المالية">
 
-    <div class="values">
-      <div><b>◉</b><h3>رؤيتنا</h3><p>أن نكون الوجهة الأولى في تقديم الخدمات المالية المتخصصة.</p></div>
-      <div><b>◉</b><h3>رسالتنا</h3><p>تقديم حلول مالية مبتكرة تساهم في نمو أعمال عملائنا.</p></div>
-      <div><b>◇</b><h3>قيمنا</h3><p>النزاهة، الاحترافية، الشفافية، والالتزام.</p></div>
-    </div>
   </div>
-</section>
 
-<section id="founder" class="founder-section">
-  <div class="container">
-    <div class="section-head">
-      <span>المؤسس</span>
-      <h2>صاحب الرؤية والبداية</h2>
-      <p>مسيرة بدأت عام 1951 واستمرت عبر أجيال من الخبرة والثقة.</p>
-    </div>
-
-    <div class="founder-card">
-      <div class="founder-image-wrap">
-        <img src="founder.jpeg" alt="المحاسب القانوني أنور زكي">
-        <div class="founder-year">منذ 1951</div>
-      </div>
-
-      <div class="founder-content">
-        <span class="founder-label">مؤسس المكتب</span>
-        <h3>أنور زكي</h3>
-        <p class="founder-age"><span>البداية:</span> 1951</p>
-        <p class="founder-bio">بدأت مسيرة المكتب على يد مؤسسه، الذي وضع الأساس لرؤية تقوم على المهنية والدقة والنزاهة في مجال المحاسبة والاستشارات المالية. وقد امتدت هذه المسيرة منذ عام 1951، لتصبح إرثًا مهنيًا مستمرًا حتى اليوم.</p>
-        <div class="founder-note">أكثر من 70 عاماً من الخبرة والالتزام</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="team" class="why section">
-  <div class="container">
-    <div class="section-head light">
-      <span>لماذا تختارنا؟</span>
-      <h2>خبرة تثق بها ونتائج تفتخر بها</h2>
-    </div>
-
-    <div class="why-grid">
-      <div><b>◉</b><h3>دعم مستمر</h3><p>فريق دعم دائم للرد على استفساراتك ومساعدتك في أي وقت.</p></div>
-      <div><b>⚙️</b><h3>حلول مخصصة</h3><p>نقدم حلولاً مالية تناسب طبيعة واحتياجات عملك.</p></div>
-      <div><b>◷</b><h3>الالتزام بالمواعيد</h3><p>نحرص على تسليم أعمالك في الوقت المحدد.</p></div>
-      <div><b>♙</b><h3>فريق متخصص</h3><p>نخبة من المحاسبين والاستشاريين ذوي الخبرة والكفاءة.</p></div>
-      <div><b>✓</b><h3>أمان وموثوقية</h3><p>نحافظ على سرية بياناتك ونلتزم بأعلى معايير الأمان.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="blog" class="section blog">
-  <div class="container">
-    <div class="section-head">
-      <span>المدونة</span>
-      <h2>آخر الأخبار والنصائح المالية</h2>
-    </div>
-
-    <div class="blog-grid">
-      <article><small>محاسبة</small><h3>كيف تساعدك المحاسبة المنظمة على نمو أعمالك؟</h3><a href="#contact">اقرأ المزيد ←</a></article>
-      <article><small>ضرائب</small><h3>أهم النصائح لتنظيم ملفاتك والتزاماتك الضريبية</h3><a href="#contact">اقرأ المزيد ←</a></article>
-      <article><small>استشارات</small><h3>كيف تتخذ قراراً مالياً أفضل لشركتك؟</h3><a href="#contact">اقرأ المزيد ←</a></article>
-    </div>
-  </div>
-</section>
-
-
-<iframe name="formResponseFrame" id="formResponseFrame"
-        style="display:none;width:0;height:0;border:0;"></iframe>
-
-<div id="formSuccessMessage"
-     style="display:none;position:fixed;inset:auto 20px 20px 20px;z-index:9999;
-            background:#fff;padding:18px 20px;border-radius:14px;
-            box-shadow:0 10px 35px rgba(0,0,0,.15);text-align:center;
-            font-family:inherit;">
-  تم إرسال الطلب بنجاح، شكرًا لتواصلك معنا.
 </div>
 
-<section id="jobs" class="section jobs">
+
+<div class="about-content">
+
+  <div class="eyebrow dark">
+    من نحن
+  </div>
+
+  <h2>
+    شريكك المالي
+    <br>
+    <span>نحو النجاح والاستدامة</span>
+  </h2>
+
+  <p>
+    منذ عام 1951، نلتزم بتقديم خدمات احترافية بمعايير عالمية.
+    نعمل بشفافية ومصداقية لبناء علاقات طويلة الأمد مع عملائنا.
+  </p>
+
+  <a class="btn primary" href="#contact">
+    تعرف علينا أكثر
+  </a>
+
+</div>
+
+
+<div class="values">
+
+  <div>
+    <b>◉</b>
+
+    <h3>
+      رؤيتنا
+    </h3>
+
+    <p>
+      أن نكون الوجهة الأولى في تقديم الخدمات المالية المتخصصة.
+    </p>
+  </div>
+
+
+  <div>
+    <b>◉</b>
+
+    <h3>
+      رسالتنا
+    </h3>
+
+    <p>
+      تقديم حلول مالية مبتكرة تساهم في نمو أعمال عملائنا.
+    </p>
+  </div>
+
+
+  <div>
+    <b>◇</b>
+
+    <h3>
+      قيمنا
+    </h3>
+
+    <p>
+      النزاهة، الاحترافية، الشفافية، والالتزام.
+    </p>
+  </div>
+
+</div>
+
+  </div></section><!-- =========================
+     Founder
+========================= --><section id="founder" class="founder-section">  <div class="container"><div class="section-head">
+
+  <span>
+    المؤسس
+  </span>
+
+  <h2>
+    صاحب الرؤية والبداية
+  </h2>
+
+  <p>
+    مسيرة بدأت عام 1951 واستمرت عبر أجيال من الخبرة والثقة.
+  </p>
+
+</div>
+
+
+<div class="founder-card">
+
+
+  <div class="founder-image-wrap">
+
+    <img
+      src="founder.jpeg"
+      alt="المحاسب القانوني أنور زكي">
+
+    <div class="founder-year">
+      منذ 1951
+    </div>
+
+  </div>
+
+
+  <div class="founder-content">
+
+    <span class="founder-label">
+      مؤسس المكتب
+    </span>
+
+    <h3>
+      أنور زكي
+    </h3>
+
+    <p class="founder-age">
+      <span>البداية:</span>
+      1951
+    </p>
+
+    <p class="founder-bio">
+      بدأت مسيرة المكتب على يد مؤسسه، الذي وضع الأساس لرؤية تقوم على المهنية والدقة والنزاهة في مجال المحاسبة والاستشارات المالية. وقد امتدت هذه المسيرة منذ عام 1951، لتصبح إرثًا مهنيًا مستمرًا حتى اليوم.
+    </p>
+
+    <div class="founder-note">
+      أكثر من 70 عاماً من الخبرة والالتزام
+    </div>
+
+  </div>
+
+</div>
+
+  </div></section><!-- =========================
+     Why Us
+========================= --><section id="team" class="why section">  <div class="container"><div class="section-head light">
+
+  <span>
+    لماذا تختارنا؟
+  </span>
+
+  <h2>
+    خبرة تثق بها ونتائج تفتخر بها
+  </h2>
+
+</div>
+
+
+<div class="why-grid">
+
+  <div>
+    <b>◉</b>
+    <h3>دعم مستمر</h3>
+    <p>
+      فريق دعم دائم للرد على استفساراتك ومساعدتك في أي وقت.
+    </p>
+  </div>
+
+  <div>
+    <b>⚙️</b>
+    <h3>حلول مخصصة</h3>
+    <p>
+      نقدم حلولاً مالية تناسب طبيعة واحتياجات عملك.
+    </p>
+  </div>
+
+  <div>
+    <b>◷</b>
+    <h3>الالتزام بالمواعيد</h3>
+    <p>
+      نحرص على تسليم أعمالك في الوقت المحدد.
+    </p>
+  </div>
+
+  <div>
+    <b>♙</b>
+    <h3>فريق متخصص</h3>
+    <p>
+      نخبة من المحاسبين والاستشاريين ذوي الخبرة والكفاءة.
+    </p>
+  </div>
+
+  <div>
+    <b>✓</b>
+    <h3>أمان وموثوقية</h3>
+    <p>
+      نحافظ على سرية بياناتك ونلتزم بأعلى معايير الأمان.
+    </p>
+  </div>
+
+</div>
+
+  </div></section><!-- =========================
+     Blog
+========================= --><section id="blog" class="section blog">  <div class="container"><div class="section-head">
+
+  <span>
+    المدونة
+  </span>
+
+  <h2>
+    آخر الأخبار والنصائح المالية
+  </h2>
+
+</div>
+
+
+<div class="blog-grid">
+
+  <article>
+
+    <small>
+      محاسبة
+    </small>
+
+    <h3>
+      كيف تساعدك المحاسبة المنظمة على نمو أعمالك؟
+    </h3>
+
+    <a href="#contact">
+      اقرأ المزيد ←
+    </a>
+
+  </article>
+
+
+  <article>
+
+    <small>
+      ضرائب
+    </small>
+
+    <h3>
+      أهم النصائح لتنظيم ملفاتك والتزاماتك الضريبية
+    </h3>
+
+    <a href="#contact">
+      اقرأ المزيد ←
+    </a>
+
+  </article>
+
+
+  <article>
+
+    <small>
+      استشارات
+    </small>
+
+    <h3>
+      كيف تتخذ قراراً مالياً أفضل لشركتك؟
+    </h3>
+
+    <a href="#contact">
+      اقرأ المزيد ←
+    </a>
+
+  </article>
+
+</div>
+
+  </div></section><!-- =========================
+     Contact
+========================= -->
+
+<!-- =========================
+     Official News & Digital Egypt
+========================= -->
+<section id="news" class="section news-section">
   <div class="container">
     <div class="section-head">
-      <span>الوظائف</span>
-      <h2>انضم إلى فريق العمل</h2>
-      <p>نبحث دائمًا عن الكفاءات المميزة للانضمام إلى فريق أنور زكي. إذا كنت ترغب في العمل معنا، أرسل بياناتك وسيرتك الذاتية.</p>
+      <span data-ar="الأخبار والمستجدات" data-en="News & Updates">الأخبار والمستجدات</span>
+      <h2 data-ar="تابع أهم المستجدات الضريبية والرقمية في مصر" data-en="Follow the latest tax and digital updates in Egypt">تابع أهم المستجدات الضريبية والرقمية في مصر</h2>
+      <p data-ar="نربطك مباشرة بالمصادر الرسمية لمصلحة الضرائب المصرية ومنصة مصر الرقمية، حتى تظل على اطلاع بآخر التحديثات والتعليمات والخدمات الإلكترونية."
+         data-en="We connect you directly to official Egyptian Tax Authority and Digital Egypt sources so you can follow the latest updates, instructions and digital services.">
+        نربطك مباشرة بالمصادر الرسمية لمصلحة الضرائب المصرية ومنصة مصر الرقمية، حتى تظل على اطلاع بآخر التحديثات والتعليمات والخدمات الإلكترونية.
+      </p>
     </div>
 
-    <div class="jobs-box">
-      <div class="jobs-info">
-        <h3>تقدم للعمل معنا</h3>
-        <p>املأ البيانات التالية وسنراجع طلبك ونتواصل معك في حالة وجود فرصة مناسبة لمؤهلاتك.</p>
-        <ul>
-          <li>محاسب</li>
-          <li>مراجع حسابات</li>
-          <li>محاسب ضرائب</li>
-          <li>متدرب</li>
-          <li>وظائف أخرى</li>
-        </ul>
+    <div class="news-grid">
+      <article class="news-card">
+        <span class="news-badge" data-ar="مصلحة الضرائب المصرية • 2 سبتمبر 2026" data-en="Egyptian Tax Authority • 2 Sep 2026">مصلحة الضرائب المصرية • 2 سبتمبر 2026</span>
+        <h3 data-ar="بطاقات ضريبية مؤقتة لمدة 8 أشهر لمساندة المستثمرين في سرعة إنهاء الإجراءات التأسيسية"
+            data-en="Temporary tax cards for 8 months to support investors in completing establishment procedures">
+          بطاقات ضريبية مؤقتة لمدة 8 أشهر لمساندة المستثمرين في سرعة إنهاء الإجراءات التأسيسية
+        </h3>
+        <p data-ar="خبر رسمي حديث من مصلحة الضرائب المصرية، ويمكن الرجوع إلى المصدر لمعرفة التفاصيل والتعليمات."
+           data-en="A recent official update from the Egyptian Tax Authority. Visit the source for the full details and instructions.">
+          خبر رسمي حديث من مصلحة الضرائب المصرية، ويمكن الرجوع إلى المصدر لمعرفة التفاصيل والتعليمات.
+        </p>
+        <a href="https://www.eta.gov.eg/ar/news" target="_blank" rel="noopener" data-ar="اقرأ آخر أخبار الضرائب ←" data-en="Read the latest tax news →">اقرأ آخر أخبار الضرائب ←</a>
+      </article>
+
+      <article class="news-card">
+        <span class="news-badge" data-ar="الفاتورة الإلكترونية" data-en="E-Invoice">الفاتورة الإلكترونية</span>
+        <h3 data-ar="دليلك للتعامل مع منظومة الفاتورة الإلكترونية"
+            data-en="Your guide to the Egyptian E-Invoice system">
+          دليلك للتعامل مع منظومة الفاتورة الإلكترونية
+        </h3>
+        <p data-ar="الوصول إلى التسجيل والتكامل والتكويد والتوقيع الإلكتروني وقرارات الإلزام من المصدر الرسمي."
+           data-en="Access registration, integration, coding, e-signature and mandate information from the official source.">
+          الوصول إلى التسجيل والتكامل والتكويد والتوقيع الإلكتروني وقرارات الإلزام من المصدر الرسمي.
+        </p>
+        <a href="https://www.eta.gov.eg/ar/content/e-invoice-services" target="_blank" rel="noopener" data-ar="دليل الفاتورة الإلكترونية ←" data-en="E-Invoice guide →">دليل الفاتورة الإلكترونية ←</a>
+      </article>
+
+      <article class="news-card">
+        <span class="news-badge" data-ar="مصر الرقمية" data-en="Digital Egypt">مصر الرقمية</span>
+        <h3 data-ar="الخدمات الحكومية الرقمية في منصة مصر الرقمية"
+            data-en="Government digital services on Digital Egypt">
+          الخدمات الحكومية الرقمية في منصة مصر الرقمية
+        </h3>
+        <p data-ar="بوابة موحدة للخدمات الحكومية الرقمية، ويمكنك الوصول إليها مباشرة من خلال الموقع الرسمي."
+           data-en="A unified gateway for digital government services, available directly through the official platform.">
+          بوابة موحدة للخدمات الحكومية الرقمية، ويمكنك الوصول إليها مباشرة من خلال الموقع الرسمي.
+        </p>
+        <a href="https://digital.gov.eg/" target="_blank" rel="noopener" data-ar="ادخل إلى مصر الرقمية ←" data-en="Visit Digital Egypt →">ادخل إلى مصر الرقمية ←</a>
+      </article>
+    </div>
+
+    <div class="digital-box">
+      <div>
+        <h3 data-ar="منظومة واحدة لعملك: ضرائب + فاتورة إلكترونية + خدمات رقمية"
+            data-en="One digital path for your business: Tax + E-Invoice + Digital Services">
+          منظومة واحدة لعملك: ضرائب + فاتورة إلكترونية + خدمات رقمية
+        </h3>
+        <p data-ar="نساعدك في تنظيم الدورة المستندية والحسابات والالتزامات الضريبية، مع متابعة متطلبات التحول الرقمي ذات الصلة بنشاطك."
+           data-en="We help organize your accounting cycle, records and tax obligations while keeping up with digital requirements relevant to your business.">
+          نساعدك في تنظيم الدورة المستندية والحسابات والالتزامات الضريبية، مع متابعة متطلبات التحول الرقمي ذات الصلة بنشاطك.
+        </p>
       </div>
-
-      <!-- تم إصلاح التحويل بعد إرسال الطلب باستخدام next داخل Email Link -->
-      <form id="jobForm" target="formResponseFrame"
-            action="https://script.google.com/macros/s/AKfycbwT6-4mOVyzyxrzc1ubp_G9EdWCreGzTqKiHEkBt1jYFJIlLrrSJpRtrovFqwc3B9AS8w/exec"
-            method="POST"
-            enctype="multipart/form-data">
-
-        <input type="hidden" name="_subject" value="طلب توظيف جديد من موقع أنور زكي">
-        <input type="hidden" name="_captcha" value="true">
-        <input type="hidden" name="_template" value="table">
-
-        <input type="text" name="name" placeholder="الاسم بالكامل" required>
-        <input type="tel" name="phone" placeholder="رقم الهاتف" required>
-        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-
-        <select name="position" required>
-          <option value="">اختر الوظيفة المطلوبة</option>
-          <option value="محاسب">محاسب</option>
-          <option value="مراجع حسابات">مراجع حسابات</option>
-          <option value="محاسب ضرائب">محاسب ضرائب</option>
-          <option value="متدرب">متدرب</option>
-          <option value="أخرى">أخرى</option>
-        </select>
-
-        <textarea name="experience" placeholder="اكتب نبذة عن خبراتك ومؤهلاتك..." rows="5" required></textarea>
-
-        <label class="file-label" for="cv">السيرة الذاتية (CV) - PDF</label>
-        <input id="cv" type="file" name="cv" accept=".pdf,application/pdf" required>
-
-        <button class="btn primary" type="submit">إرسال طلب التوظيف</button>
-
-        <small class="form-note">
-          بعد الإرسال سيتم تحويلك للصفحة الرئيسية، وستصل البيانات إلى إدارة المكتب.
-        </small>
-      </form>
+      <div class="digital-links">
+        <a href="https://www.eta.gov.eg/" target="_blank" rel="noopener" data-ar="مصلحة الضرائب المصرية" data-en="Egyptian Tax Authority">مصلحة الضرائب المصرية</a>
+        <a href="https://digital.gov.eg/" target="_blank" rel="noopener" data-ar="مصر الرقمية" data-en="Digital Egypt">مصر الرقمية</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="contact" class="contact section">
-  <div class="container contact-box">
-    <div>
-      <div class="eyebrow">تواصل معنا</div>
-      <h2>جاهزون لمساعدتك</h2>
-      <p>تواصل معنا لمعرفة كيف يمكننا دعم أعمالك بخدمات محاسبية ومالية احترافية.</p>
-    </div>
-
-    <form id="contactForm" target="formResponseFrame"
-          action="https://script.google.com/macros/s/AKfycbwT6-4mOVyzyxrzc1ubp_G9EdWCreGzTqKiHEkBt1jYFJIlLrrSJpRtrovFqwc3B9AS8w/exec"
-          method="POST">
-
-      <input type="hidden" name="_subject" value="رسالة جديدة من موقع أنور زكي">
-      <input type="hidden" name="_captcha" value="true">
-      <input type="hidden" name="_template" value="table">
-
-      <input type="text" name="name" placeholder="الاسم" required>
-      <input type="tel" name="phone" placeholder="رقم الهاتف" required>
-      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-      <textarea name="message" placeholder="اكتب رسالتك..." rows="4"></textarea>
-
-      <button class="btn primary" type="submit">إرسال الرسالة</button>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="container footer-grid">
-    <div>
-      <img src="logo.jpeg" alt="أنور زكي" class="footer-logo">
-    </div>
-
-    <div>
-      <h4>خدماتنا</h4>
-      <a href="#services">خدمات المحاسبة</a>
-      <a href="#services">المراجعة والتدقيق</a>
-      <a href="#services">الخدمات الضريبية</a>
-      <a href="#services">تأسيس الشركات</a>
-      <a href="#services">الاستشارات المالية</a>
-    </div>
-
-    <div>
-      <h4>روابط سريعة</h4>
-      <a href="#home">الرئيسية</a>
-      <a href="#about">من نحن</a>
-      <a href="#founder">المؤسس</a>
-      <a href="#team">فريق العمل</a>
-      <a href="#blog">المدونة</a>
-    </div>
-
-    <div>
-      <h4>تواصل معنا</h4>
-      <p>📞 +201001470049</p>
-      <p>✉️ info@anwarzaki.com</p>
-      <p>📍 السويس شارع الجلاء بعماره العسكري، مصر</p>
-      <p>📍 السويس 8 شارع سينا، مصر</p>
-    </div>
-  </div>
-
-  <div class="copyright">
-    © 2026 Anwar Zaki For Accounting & Financial Consulting — جميع الحقوق محفوظة.
-  </div>
-</footer>
-
-<script>
-  const btn = document.getElementById('menuBtn');
-  const nav = document.getElementById('navMenu');
-
-  if (btn && nav) {
-    btn.addEventListener('click', function () {
-      nav.classList.toggle('show');
-      btn.setAttribute('aria-expanded', nav.classList.contains('show'));
-    });
-
-    document.querySelectorAll('#navMenu a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        nav.classList.remove('show');
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-  }
-
-  const successBox = document.getElementById('formSuccessMessage');
-  const responseFrame = document.getElementById('formResponseFrame');
-  let waitingForm = null;
-
-  function showSuccess(form, message) {
-    if (successBox) {
-      successBox.textContent = message;
-      successBox.style.display = 'block';
-      setTimeout(() => successBox.style.display = 'none', 5000);
-    }
-    if (form) form.reset();
-  }
-
-  // Job application: encode the PDF into a hidden field, then submit to Google Apps Script.
-  const jobForm = document.getElementById('jobForm');
-  if (jobForm) {
-    jobForm.addEventListener('submit', function (event) {
-      const fileInput = document.getElementById('cv');
-      const file = fileInput && fileInput.files ? fileInput.files[0] : null;
-
-      if (!file) {
-        event.preventDefault();
-        alert('من فضلك اختر ملف PDF للسيرة الذاتية.');
-        return;
-      }
-
-      if (file.type !== 'application/pdf') {
-        event.preventDefault();
-        alert('السيرة الذاتية يجب أن تكون بصيغة PDF.');
-        return;
-      }
-
-      // Keep uploads reasonably small for a serverless form.
-      if (file.size > 8 * 1024 * 1024) {
-        event.preventDefault();
-        alert('حجم ملف الـPDF يجب ألا يتجاوز 8 ميجابايت.');
-        return;
-      }
-
-      event.preventDefault();
-
-      const oldSubmit = jobForm.querySelector('button[type="submit"]');
-      if (oldSubmit) {
-        oldSubmit.disabled = true;
-        oldSubmit.textContent = 'جاري الإرسال...';
-      }
-
-      const reader = new FileReader();
-      reader.onload = function () {
-        let hidden = jobForm.querySelector('input[name="cvBase64"]');
-        if (!hidden) {
-          hidden = document.createElement('input');
-          hidden.type = 'hidden';
-          hidden.name = 'cvBase64';
-          jobForm.appendChild(hidden);
-        }
-
-        hidden.value = reader.result.split(',')[1];
-        let fileName = jobForm.querySelector('input[name="cvFileName"]');
-        if (!fileName) {
-          fileName = document.createElement('input');
-          fileName.type = 'hidden';
-          fileName.name = 'cvFileName';
-          jobForm.appendChild(fileName);
-        }
-        fileName.value = file.name;
-
-        let mime = jobForm.querySelector('input[name="cvMimeType"]');
-        if (!mime) {
-          mime = document.createElement('input');
-          mime.type = 'hidden';
-          mime.name = 'cvMimeType';
-          jobForm.appendChild(mime);
-        }
-        mime.value = file.type;
-
-        waitingForm = jobForm;
-        jobForm.submit();
-      };
-
-      reader.onerror = function () {
-        alert('تعذر قراءة ملف الـPDF. حاول مرة أخرى.');
-        if (oldSubmit) {
-          oldSubmit.disabled = false;
-          oldSubmit.textContent = 'إرسال طلب التوظيف';
-        }
-      };
-
-      reader.readAsDataURL(file);
-    });
-  }
-
-  // Contact form: submit normally to the same Google Apps Script web app.
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function () {
-      waitingForm = contactForm;
-      const submit = contactForm.querySelector('button[type="submit"]');
-      if (submit) {
-        submit.disabled = true;
-        submit.textContent = 'جاري الإرسال...';
-      }
-    });
-  }
-
-  // Google Apps Script responds inside the hidden iframe.
-  if (responseFrame) {
-    responseFrame.addEventListener('load', function () {
-      if (!waitingForm) return;
-      showSuccess(
-        waitingForm,
-        waitingForm.id === 'jobForm'
-          ? 'تم إرسال طلب التوظيف بنجاح، شكرًا لتقديمك.'
-          : 'تم إرسال رسالتك بنجاح، شكرًا لتواصلك معنا.'
-      );
-      const submit = waitingForm.querySelector('button[type="submit"]');
-      if (submit) {
-        submit.disabled = false;
-        submit.textContent = waitingForm.id === 'jobForm'
-          ? 'إرسال طلب التوظيف'
-          : 'إرسال الرسالة';
-      }
-      waitingForm = null;
-    });
-  }
-</script>
-</body>
-</html>
+<!-- =========================
+     Location / Map
+========================= -->
+<section id="location" class="section location-section">
+  <div class="container">
+    <div class="section-head">
+      <span data-ar="موقعنا" data-en="Our Location">موقعنا</span>
+      <h2 data-ar="تجدنا في السويس" data-en="Find us in Suez">تجدنا في السويس</h2>
+      <p data-ar="يمكنك الوصول إلى م
