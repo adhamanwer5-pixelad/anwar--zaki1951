@@ -133,7 +133,7 @@ button,input,select,textarea{font:inherit}
   align-items:center;
   background:
     linear-gradient(90deg,rgba(16,43,38,.97),rgba(16,43,38,.91)),
-    url('logo.jpeg') center/cover;
+    url('1.jpeg.') center/cover;
   color:gold;
 }
 .hero:before{
@@ -393,7 +393,7 @@ button,input,select,textarea{font:inherit}
 .why{
   background:
     linear-gradient(rgba(16,43,38,.97),rgba(16,43,38,.97)),
-    url('logo.jpeg') center/cover;
+    url('1.jpeg.') center/cover;
   color:gold;
 }
 .section-head.light h2{color:white}
