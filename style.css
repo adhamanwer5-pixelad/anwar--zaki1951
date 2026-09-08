@@ -134,7 +134,7 @@ button,input,select,textarea{font:inherit}
   background:
     linear-gradient(90deg,rgba(16,43,38,.97),rgba(16,43,38,.91)),
     url('logo.jpeg') center/cover;
-  color:white;
+  color:gold;
 }
 .hero:before{
   content:"1951";
@@ -394,7 +394,7 @@ button,input,select,textarea{font:inherit}
   background:
     linear-gradient(rgba(16,43,38,.97),rgba(16,43,38,.97)),
     url('logo.jpeg') center/cover;
-  color:white;
+  color:gold;
 }
 .section-head.light h2{color:white}
 .section-head.light p{color:#ccd1cc}
